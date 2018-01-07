@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>タイトル</title>
+</head>
+<body>
+   <% @posts.each do |post| %>
+    <%= post.name %><br>
+	<%= post.content %><br>
+	<%= post.created_at %><br><br>
+	<% end %>
+	
+</body>
+</html>
